@@ -1,0 +1,22 @@
+{
+  "name": "bakery-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "start": "turbo run start",
+    "prisma:migrate": "pnpm --filter api prisma:migrate",
+    "prisma:studio": "pnpm --filter api prisma:studio"
+  },
+  "devDependencies": {
+    "turbo": "^1.6.0",
+    "typescript": "^5.0.0",
+    "pnpm": "^8.0.0"
+  }
+}
