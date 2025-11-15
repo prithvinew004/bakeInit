@@ -1,0 +1,4 @@
+
+> api@0.0.1 lint C:\Users\prith\OneDrive\Desktop\bakeInit\packages\api
+> eslint . --ext .ts
+

@@ -19,7 +19,7 @@ router.post('/', async (req, res) => {
     const products = await prisma.product.findMany({ where: { id: { in: productIds } }});
     // NOTE: implement real price calc and Razorpay integration later
     const subtotal = parsed.items.reduce((acc, it) => {
-      const p = products.find((x) => x.id === it.productId);
+      const p = products.find((x: any) => x.id === it.productId);
       return acc + (p ? p.price * it.qty : 0);
     }, 0);
     const order = await prisma.order.create({

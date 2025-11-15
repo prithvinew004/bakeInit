@@ -1,0 +1,28 @@
+
+> web@0.0.1 build C:\Users\prith\OneDrive\Desktop\bakeInit\apps\web
+> next build
+
+   Linting and checking validity of types ...
+   ▲ Next.js 14.0.0
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Collecting page data ...
+   Generating static pages (0/3) ...
+ ✓ Generating static pages (3/3) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (pages)                              Size     First Load JS
+┌ ○ /                                      349 B          82.5 kB
+├   /_app                                  0 B            82.1 kB
+└ ○ /404                                   181 B          82.3 kB
++ First Load JS shared by all              82.2 kB
+  ├ chunks/framework-6e924195386f5e45.js   45.6 kB
+  ├ chunks/main-2cf650cca41abcf9.js        35.4 kB
+  ├ chunks/pages/_app-f8ef6383ead91614.js  307 B
+  ├ chunks/webpack-fd8027ecb5121007.js     770 B
+  └ css/1925098778fd8c25.css               130 B
+
+○  (Static)  prerendered as static HTML
+
